@@ -1,0 +1,52 @@
+{
+    "name": "constants-enums-generator-ts",
+    "description": "Generates constants and enums for Dataverse (CDS, Dynamics 365/CRM) tables (entities)",
+    "version": "1.0.1",
+    "keywords": [
+        "CRM",
+        "XRM",
+        "Dynamics CRM",
+        "Dynamics 365",
+        "D365",
+        "CDS",
+        "Dataverse",
+        "PowerApps",
+        "Generator",
+        "Tool"
+    ],
+    "homepage": "https://github.com/dataverse-tools/constants-enums-generator-ts",
+    "bugs": "https://github.com/dataverse-tools/constants-enums-generator-ts/issues",
+    "repository": "github:dataverse-tools/constants-enums-generator-ts",
+    "license": "MIT",
+    "author": "Anton Zhaparov",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "gulp",
+        "watch": "rollup -c -w"
+    },
+    "dependencies": {
+        "ts-morph": "10.0.2"
+    },
+    "devDependencies": {
+        "@types/gulp": "4.0.8",
+        "@typescript-eslint/eslint-plugin": "4.22.0",
+        "@typescript-eslint/parser": "4.22.0",
+        "@wessberg/rollup-plugin-ts": "1.3.14",
+        "del": "6.0.0",
+        "eslint": "7.24.0",
+        "eslint-config-standard-with-typescript": "20.0.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-jsdoc": "32.3.0",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "5.1.0",
+        "gulp": "4.0.2",
+        "gulp-eslint": "6.0.0",
+        "gulp-run-command": "0.0.10",
+        "gulp-typescript": "5.0.1",
+        "rollup": "2.45.2",
+        "ts-node": "9.1.1",
+        "typescript": "4.2.4"
+    }
+}
