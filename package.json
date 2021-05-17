@@ -27,7 +27,7 @@
         "watch": "rollup -c -w"
     },
     "dependencies": {
-        "ts-morph": "10.0.2"
+        "ts-morph": "10.1.0"
     },
     "devDependencies": {
         "@types/gulp": "4.0.8",
