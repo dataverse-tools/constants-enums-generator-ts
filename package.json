@@ -42,7 +42,7 @@
         "eslint-plugin-promise": "5.1.0",
         "gulp": "4.0.2",
         "gulp-eslint": "6.0.0",
-        "gulp-run-command": "0.0.10",
+        "gulp-shell": "0.8.0",
         "gulp-typescript": "5.0.1",
         "rollup": "2.56.3",
         "rollup-plugin-ts": "1.4.0",

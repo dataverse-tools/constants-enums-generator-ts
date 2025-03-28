@@ -1,12 +1,12 @@
 import gulp from "gulp";
 import del from "del";
 import gulpTs from "gulp-typescript";
-import run from "gulp-run-command";
+import eslint from "gulp-eslint";
+import typescript from "typescript";
+import shell from "gulp-shell";
 
-const eslint = require("gulp-eslint");
 
-
-const tsProject = gulpTs.createProject("tsconfig.json", { typescript: require("typescript") });
+const tsProject = gulpTs.createProject("tsconfig.json", { typescript: typescript });
 
 export function check() {
     return tsProject.src()
@@ -24,8 +24,8 @@ export function clean() {
     return del("dist");
 }
 
-export function buildScripts() {
-    return run("rollup -c")();
+export async function buildScripts() {
+    return shell.task("rollup -c");
 }
 
 const build = gulp.series(
